@@ -1,0 +1,36 @@
+/* full-width section */
+.category-section {
+  width: 100%;
+  padding: 40px 0;   /* top & bottom spacing */
+}
+
+/* grey bar */
+.category-bar {
+  width: 95%;        /* almost full width */
+  margin: 0 auto;    /* center it */
+  background: #f3f4f6;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+}
+
+.see-all {
+  cursor: pointer;
+}
+
+/* cards row */
+
+.category-row {
+  width: 95%;
+  margin: 35px auto 0;
+
+  display: flex;
+  justify-content: center;   /* 🔥 THIS IS THE FIX */
+  gap: 80px;
+  flex-wrap: wrap;
+}
+

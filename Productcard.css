@@ -1,0 +1,69 @@
+.product-card {
+  width: 220px;
+  height: 380px;              /* 🔥 SAME HEIGHT FOR ALL */
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+
+  padding: 18px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* title */
+.product-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+/* price */
+.product-price {
+  font-size: 12px;
+  color: #ff6b00;
+  margin-bottom: 10px;
+}
+
+/* IMAGE AREA — THIS IS THE KEY */
+.product-img-box {
+  width: 100%;
+  height: 240px;              /* 🔥 FORCE SAME IMAGE AREA */
+  background: #f4f4f4;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;           /* 🔥 STOP OVERFLOW */
+  margin-bottom: 12px;
+}
+
+.product-img-box img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;        /* 🔥 NEVER STRETCH */
+}
+
+/* bottom actions */
+.product-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.buy-now {
+  color: #ff6b00;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.see-more {
+  color: #777;
+  cursor: pointer;
+}
